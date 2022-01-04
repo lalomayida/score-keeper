@@ -30,11 +30,11 @@ function updateScore(player, opponent) {
   }
 }
 
-p1Button.addEventListener("click", function () {
+p1.button.addEventListener("click", function () {
   updateScore(p1, p2);
 });
 
-p2Button.addEventListener("click", function () {
+p2.button.addEventListener("click", function () {
   updateScore(p2, p1);
 });
 
