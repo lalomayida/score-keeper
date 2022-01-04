@@ -32,18 +32,18 @@ p2Button.addEventListener("click", function () {
   }
 });
 
-resetButton.addEventListener("click", reset());
 
 winningScoreSelect.addEventListener("change", function () {
-  isGameOver = false;
   winningScore = parseInt(this.value);
-reset();
+  reset();
 });
 
-function reset(){
-    isGameOver = false;
-    p1Score = 0;
-    p2Score = 0;
-    p1Display.textContent = 0;
-    p2Display.textContent = 0;
+resetButton.addEventListener("click", reset);
+
+function reset() {
+  isGameOver = false;
+  p1Score = 0;
+  p2Score = 0;
+  p1Display.textContent = 0;
+  p2Display.textContent = 0;
 }
